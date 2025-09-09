@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Form - 1</title>
+  </head>
+  <body style="background-color: #ecedf3">
+    <img src="logo.png" />
+    <form action="studyform_2.html">
+      <br />
+      <label>Name of <br />Organisation <font color="red">*</font></label>
+      <input type="text" required />
+      <!-- <p><span>This name is for Hector and Co to refer to</span></p> -->
+      <br /><br /><br />
+      <label>Countrys Where<br />Taxes are Paid<font color="red">*</font></label
+      ><br />
+      <input type="radio" name="country" id="Newzeland" required />
+      <label for="Newzeland">New Zeland</label>
+      <br />
+      <input type="radio" name="country" id="Austrila" required />
+      <label for="Austrila">Austrila</label><br />
+      <input type="text" name="country" required />
+      <label>Other</label><br />
+      <br /><br />
+      <label>IRD Number<font color="red">*</font></label>
+      <input type="text" required />
+      <br />
+      <hr />
+      <h1>Organisation Name & Type</h1>
+      <hr />
+      <label
+        >Name you want<br />
+        in Xero<font color="red">*</font
+        >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label
+      >
+      <input type="text" required />
+      <br /><br />
+      <label
+        >Legal/Trading<br />
+        Name<font color="red">*</font
+        >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label
+      >
+      <input type="text" required /><br /><br />
+      <label for="country"
+        >Organisation<br />
+        Kind<font color="red">*</font
+        >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label
+      >
+      <select id="country" required>
+        <option>Please Select</option>
+        <option>ABC</option>
+        <option>ABC</option>
+        <option>ABC</option>
+        <option>ABC</option>
+      </select>
+      <br /><br />
+      <label
+        >What is your<br />
+        line of business?<font color="red">*</font></label
+      >
+      <input type="text" required />
+      <br /><br /><br />
+      <hr />
+      <br /><br />
+      <!-- submit  -->
+      <input type="submit" value="Next" />
+    </form>
+    <br /><br />
+  </body>
+</html>

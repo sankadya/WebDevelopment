@@ -1,0 +1,433 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+#container {
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
+}
+
+nav {
+  background-color: antiquewhite;
+  width: 100%;
+  padding: 20px 0;
+}
+
+.Navbar {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
+}
+
+.img_flex_1 {
+  flex: 2;
+}
+
+.nav_tab {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 30px;
+  flex: 8;
+}
+
+.nav_tab li a {
+  color: #000;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.btn_flex_3 {
+  flex: 1;
+}
+
+.btn-primary {
+  margin: 0 0 0 18px;
+  background-color: #e5c036;
+  border: none;
+  padding: 10px 28px;
+}
+
+.btn-primary a {
+  color: aliceblue;
+  font-size: 16px;
+  font-family: "Noto Sans", sans-serif;
+}
+
+/* HERO BANNER  */
+
+.hero_banner {
+  width: 100%;
+  height: 550px;
+  background-image: url(https://images.pexels.com/photos/16267439/pexels-photo-16267439.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.black_shade {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.inner_content {
+  width: 35%;
+  background-color: #0e0e0e2e;
+  margin: 30px;
+  padding: 20px;
+}
+
+.black_shade .inner_content h1 {
+  font-size: 40px;
+  color: #e5c036;
+  font-family: "Google Sans Code", monospace;
+}
+
+.black_shade .inner_content p {
+  font-family: "Noto Sans", sans-serif;
+  color: #fff;
+  line-height: 23px;
+  padding-block: 20px;
+  text-align: justify;
+}
+
+.black_shade .inner_content button {
+  background-color: #e5c036;
+  padding: 12px 28px;
+  border: none;
+}
+
+.black_shade .inner_content button a {
+  color: aliceblue;
+  font-size: 16px;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.about_us {
+  margin: 50px 0;
+}
+
+.about_us .about_heading h1 {
+  text-align: center;
+  font-family: "Google Sans Code", monospace;
+  font-size: 40px;
+}
+
+.about_us .about_heading p {
+  font-family: "Noto Sans", sans-serif;
+  text-align: center;
+  padding: 12px 0;
+}
+
+.about_inner_content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  gap: 12px;
+}
+
+.about_left_side {
+  width: 50%;
+}
+
+.about_inner_content .about_left_side h2 {
+  font-family: "Google Sans Code", monospace;
+  font-size: 34px;
+}
+
+.about_inner_content .about_left_side span {
+  font-style: italic;
+  font-size: 16px;
+  padding-block: 13px;
+  display: block;
+}
+
+.about_inner_content .about_left_side button {
+  background-color: #e5c036;
+  padding: 12px 28px;
+  border: none;
+}
+
+.about_inner_content .about_left_side button a {
+  color: aliceblue;
+  font-size: 16px;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.about_inner_content .about_left_side button i {
+  color: #faebd7;
+}
+
+.check_list li {
+  display: flex;
+  column-gap: 10px;
+  margin-bottom: 16px;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.check_list li i {
+  color: #e5c036;
+  font-size: 18px;
+}
+
+.about_right_img {
+  width: 50%;
+}
+
+/* Service  */
+.bg_color_service {
+  width: 100%;
+  height: auto;
+  background-color: #faebd757;
+  padding: 50px 0;
+}
+
+.Service_heading {
+  text-align: center;
+}
+
+.Service_heading h3 {
+  font-size: 40px;
+  font-family: "Google Sans Code", monospace;
+}
+
+.Service_heading p {
+  font-family: "Noto Sans", sans-serif;
+  text-align: center;
+  padding: 12px 0;
+}
+
+.service_content {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 18px;
+  margin-top: 30px;
+}
+
+.service_content .service_box {
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
+  height: auto;
+  padding: 40px 20px 20px 20px
+}
+
+.service_content .service_box .ineer_box i {
+  color: #e5c036;
+  font-size: 48px;
+}
+
+.service_content .service_box .ineer_box h3 {
+  font-family: "Google Sans Code", monospace;
+  padding-block: 24px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.service_content .service_box .ineer_box p {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 14px;
+  padding-bottom: 26px;
+  line-height: 22px;
+}
+
+/* Call to Action  */
+.call_action_bg {
+  width: 100%;
+  height: 400px;
+  background-image: url(https://mcn-images.bauersecure.com/wp-images/4599/1440x960/a-bmw-f850gs-1.jpg?mode=max&quality=90&scale=down);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.black_call_action {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.call_action_content {
+  width: 60%;
+  text-align: center;
+}
+
+.black_call_action .call_action_content h1 {
+  font-size: 40px;
+  color: #ffffff;
+  font-family: "Google Sans Code", monospace;
+}
+
+.black_call_action .call_action_content p {
+  font-family: "Noto Sans", sans-serif;
+  color: #ffffff;
+  padding-block: 16px;
+  line-height: 26px;
+}
+
+.black_call_action .call_action_content button {
+  background: none;
+  border: 1px solid #fff;
+  padding: 12px 42px;
+  border-radius: 20px;
+}
+
+.black_call_action .call_action_content button a {
+  color: #fff;
+  font-size: 16px;
+}
+
+/* More Service  */
+.more_service {
+  text-align: center;
+  padding-block: 50px;
+}
+
+.more_service .more_service_heading h1 {
+  font-family: "Google Sans Code", monospace;
+  font-size: 40px;
+}
+
+.more_service .more_service_heading p {
+  font-family: "Noto Sans", sans-serif;
+  padding-block: 12px;
+}
+
+.more_service_content {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  gap: 30px;
+}
+
+.more_service_content .more_service_box {
+  width: 100%;
+  height: auto;
+  background-color: #f1efed7d;
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.more_service_content .more_service_box img {
+  width: 100%;
+  height: 260px;
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: 0.5s ease-in-out;
+}
+
+.more_service_content .more_service_box:hover img {
+  transform: scale(0.9);
+}
+
+.more_service_content .more_service_box h4 {
+  font-size: 24px;
+  font-family: "Google Sans Code", monospace;
+  line-height: 2;
+}
+
+.more_service_content .more_service_box p {
+  font-family: "Noto Sans", sans-serif;
+  padding: 10px 0 22px 0;
+  line-height: 26px;
+}
+
+/* Team  */
+.team_section {
+  width: 100%;
+  height: auto;
+  background-color: #faebd757;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.team_heading h1 {
+  font-size: 40px;
+  font-family: "Google Sans Code", monospace;
+}
+
+.team_container {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  padding-top: 50px;
+}
+
+.team_box {
+  width: 100%;
+  height: 400px;
+  background-image: url(https://bootstrapmade.com/content/demo/Shuffle/assets/img/team/team-1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.team_box:nth-child(2) {
+  background-image: url(https://bootstrapmade.com/content/demo/Shuffle/assets/img/team/team-3.jpg);
+}
+
+.team_box:nth-child(3) {
+  background-image: url(https://bootstrapmade.com/content/demo/Shuffle/assets/img/team/team-2.jpg);
+}
+
+.team_box:nth-child(4) {
+  background-image: url(https://bootstrapmade.com/content/demo/Shuffle/assets/img/team/team-4.jpg);
+}
+
+.team_black {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.icon_list {
+  display: flex;
+  gap: 20px;
+}
+
+.icon_list li i {
+  color: #fff;
+}
+
+.icon_list li:hover i {
+  color: #e5c036;
+}
+
+.team_container .team_box .team_black h1 {
+  font-family: "Google Sans Code", monospace;
+  color: #fff;
+}
+
+.team_container .team_box .team_black p {
+  font-family: "Noto Sans", sans-serif;
+  font-style: italic;
+  color: #fff;
+  padding-bottom: 20px;
+}
