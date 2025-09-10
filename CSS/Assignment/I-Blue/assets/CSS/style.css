@@ -1,81 +1,93 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-*{
+
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-li{
+li {
   list-style: none;
 }
-a{
+
+a {
   text-decoration: none;
 }
 
-:root{
-  --primary-font:"Open Sans", sans-serif;
-  --secondary-font:"Montserrat", sans-serif;
-  --primary-color:#4064d7;
-  --white-color:#ffffff;
-  --black-color:#252525;
+:root {
+  --primary-font: "Open Sans", sans-serif;
+  --secondary-font: "Montserrat", sans-serif;
+  --primary-color: #4064d7;
+  --white-color: #ffffff;
+  --black-color: #252525;
 }
 
-#container{
-  width: 88%;
+#container {
+  width: 1200px;
   margin: 0 auto;
 }
-nav{
-      background-color: transparent;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+
+/* Navbar Start */
+
+nav {
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-nav #container{
+nav #container {
   display: flex;
   justify-content: space-between;
   padding: 24px 0;
 }
 
-.nav_link{
+.nav_link {
   display: flex;
   justify-content: space-around;
   align-items: center;
   gap: 30px;
 }
-.nav_link li a, i{
+
+.nav_link li a,
+i {
   font-family: var(--primary-font);
   text-transform: uppercase;
   color: #fff;
   font-size: 14px;
 }
-.nav_link li{
+
+.nav_link li {
   position: relative;
 }
-.nav_link li span{
-    position: absolute;
-    bottom: 0;
-    width: 14px;
-    height: 14px;
-    background-color:var(--primary-color);
-    border-radius: 50%;
-    line-height: 14px;
-    text-align: center;
-    font-size: 9px;
-    color: #fff;
+
+.nav_link li span {
+  position: absolute;
+  bottom: 0;
+  width: 14px;
+  height: 14px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  line-height: 14px;
+  text-align: center;
+  font-size: 9px;
+  color: #fff;
 }
 
-.nav_link li a:hover{
+.nav_link li a:hover {
   color: var(--primary-color);
 }
 
-.nav_link li:hover i{
+.nav_link li:hover i {
   color: var(--primary-color);
   cursor: pointer;
 }
 
-/* Banner  */
-.banner_section{
+/* Navbar End */
+
+/* Banner Start  */
+.banner_section {
   width: 100%;
   height: 680px;
   background-image: url(../Images/2.jpg);
@@ -83,30 +95,35 @@ nav #container{
   background-position: center;
   background-size: cover;
   display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-    flex-direction: column;
+  flex-direction: column;
 }
-.banner_section .banner_content{
+
+.banner_section .banner_content {
   width: 500px;
 }
-.banner_section .banner_content span{
+
+.banner_section .banner_content span {
   color: var(--white-color);
 }
-.banner_section .banner_content span{
+
+.banner_section .banner_content span {
   font-family: var(--primary-font);
   text-transform: uppercase;
   font-size: 18px;
 }
-.banner_section .banner_content h1{
+
+.banner_section .banner_content h1 {
   font-family: var(--secondary-font);
-    font-size: 53px;
-    color: var(--white-color);
-        padding: 28px 0 38px 0;
+  font-size: 53px;
+  color: var(--white-color);
+  padding: 28px 0 38px 0;
 }
-.banner_section .banner_content button{
+
+.banner_section .banner_content button {
   padding: 14px 28px;
   background-color: var(--primary-color);
   border: none;
@@ -114,23 +131,52 @@ nav #container{
   margin-inline: 20px;
   transition: all 0.7s;
 }
-.banner_section .banner_content button a{
+
+.banner_section .banner_content button a {
   color: var(--white-color);
   font-size: 14px;
   text-transform: uppercase;
   transition: all 0.7s;
 
 }
-.banner_section .banner_content button:nth-child(4){
+
+.banner_section .banner_content button:nth-child(4) {
   background-color: transparent;
   border: 2px solid var(--white-color);
 }
-.banner_content button:hover{
+
+.banner_content button:hover {
   background-color: var(--white-color);
 }
-.banner_content button:hover a{
+
+.banner_content button:hover a {
   color: var(--black-color);
 }
-.banner_content button:nth-child(4):hover{
-background-color: var(--white-color);
+
+.banner_content button:nth-child(4):hover {
+  background-color: var(--white-color);
+}
+
+/* Banner End  */
+.banner_inner {
+  width: 100%;
+  padding: 30px 70px;
+  background-color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 14px;
+  text-align: center;
+}
+
+.banner_inner .banner_inner_content {
+  border-right: 1px solid rgba(255, 255, 255, 0.2)
+}
+
+.banner_inner .banner_inner_content:nth-child(3) {
+  border-right: none;
+}
+
+.banner_inner .banner_inner_content i {
+  font-size: 60px;
 }
