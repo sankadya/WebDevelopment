@@ -197,10 +197,38 @@ i {
 /* About Section  */
 
 .about-us-bg{
-      width: 100%;
+width: 100%;
     height: 500px;
     background-image: url(../Images/pattren37.png);
-    position: absolute;
-
+    /* position: absolute; */
+    display: flex;
+    justify-content: space-evenly;
+    padding: 60px 60px 0 60px;
 }
 
+.about-us-bg .about_content{
+  width:36%;
+  background-color: var(--primary-color);
+  padding: 84px;
+}
+.about-us-bg .about_content h1{
+  font-family: var(--secondary-font);
+  color: var(--white-color);
+  line-height: 1.4;
+  font-size: 34px;
+}
+.about-us-bg .about_content p{
+  font-family: var(--primary-font);
+  color: var(--white-color);
+  padding: 16px 0 24px 0;
+  line-height:1.3;
+}
+.about-us-inner_box_content{
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+.about-us-inner_box_content .about-us-inner_content i{
+  color: var(--white-color);
+      font-size: 20px;
+}
