@@ -1,21 +1,24 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 :root {
     --red: #38ff1e;
     --white: #ffffff;
 }
 
 
-a{
+a {
     text-decoration: none;
 }
-li{
+
+li {
     list-style: none;
 }
-nav{
+
+nav {
     padding: 10px 100px;
     background-color: wheat;
     display: flex;
@@ -25,17 +28,19 @@ nav{
     position: sticky;
     top: 0;
 }
-nav > img{
+
+nav>img {
     width: 70px;
 }
-nav  ul{ 
+
+nav ul {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     align-items: center;
 }
 
-.main{
+.main {
     width: 300px;
     height: 300px;
     border: 1px solid;
@@ -43,14 +48,16 @@ nav  ul{
     position: relative;
     z-index: 1;
 }
-.main .front{
+
+.main .front {
     width: 100%;
     height: 100%;
     background: red;
     transition: all .5s;
     backface-visibility: hidden;
 }
-.main .back{
+
+.main .back {
     width: 100%;
     height: 100%;
     background: yellow;
@@ -62,18 +69,19 @@ nav  ul{
     transform: rotateY(180deg);
 }
 
-ul .active a{
+ul .active a {
     color: red;
 }
 
-ul :not(.active) a{
+ul :not(.active) a {
     color: green;
 }
 
-.main:hover .front{
+.main:hover .front {
     transform: rotateY(180deg);
 }
-.main:hover .back{
+
+.main:hover .back {
     transform: rotateY(0);
 }
 
@@ -84,6 +92,7 @@ ul :not(.active) a{
     z-index: 1;
     color: white;
 }
+
 .abc::after {
     content: '';
     width: 100%;
@@ -97,20 +106,23 @@ ul :not(.active) a{
     background: var(--red);
     z-index: -1;
 }
-p{
+
+p {
     margin: 40px;
 }
-span{
+
+span {
     padding: 10px;
     border: 1px solid;
     border-radius: 50%;
 }
-span:hover{
-    background:var(--red);
+
+span:hover {
+    background: var(--red);
     color: white;
 }
 
-.card1{
+.card1 {
     width: 300px;
     height: 300px;
     margin: 100px;
@@ -118,7 +130,8 @@ span:hover{
     position: relative;
     z-index: 1;
 }
-.card1::after{
+
+.card1::after {
     content: '';
     width: 100%;
     height: 0%;
@@ -129,20 +142,23 @@ span:hover{
     transition: all .6s;
 }
 
-.card1:hover::after{
+.card1:hover::after {
     height: 100%;
 }
+
 @media screen and (min-width:320px) and (max-width:480px) {
-    nav{
+    nav {
         padding: 10px;
         justify-content: center;
         gap: 20px;
         position: static;
     }
-    nav ul{
+
+    nav ul {
         gap: 10px;
     }
-    nav li{
+
+    nav li {
         font-size: 13px;
     }
 }
