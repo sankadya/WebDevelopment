@@ -639,7 +639,7 @@ i {
 .creative .cretive_content h1{
   font-family: var(--primary-font);
   color: var(--white-color);
-      font-size: 35px;
+      font-size: 39px;
     line-height: 1.1;
 }
 .creative .cretive_content p{
@@ -648,7 +648,19 @@ i {
       margin-block: 28px;
       font-weight: 600;
 }
+.creative .cretive_content ul{
+  margin-bottom: 50px;
+}
+.creative .cretive_content li{
+  color: var(--white-color);
+  padding: 10px;
+  font-family: var(--primary-font);
+}
 
+/* Coutdown Section  */
+.countdown_bg_img{
+  position: relative;
+}
 /* .price_nav_copy li ::before {
   content: "";
   width: 2px;
