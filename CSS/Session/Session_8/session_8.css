@@ -1,13 +1,14 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-ul{
+
+ul {
     list-style: none;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
@@ -43,7 +44,7 @@ a{
     z-index: 2;
 } */
 
-form{
+form {
     width: 500px;
     height: 500px;
     border: 1px solid;
@@ -52,15 +53,20 @@ form{
     background-color: bisque;
     border-radius: 20px;
 }
-label,input{
+
+label,
+input {
     display: block;
     margin: 20px 0;
 }
-label{
+
+label {
     font-size: 30px;
     font-family: cursive;
 }
-input[type='text'],input[type='email']{
+
+input[type='text'],
+input[type='email'] {
     width: 100%;
     padding: 20px;
     font-size: 24px;
@@ -68,19 +74,23 @@ input[type='text'],input[type='email']{
     background-color: transparent;
     border: 1px solid green;
 }
-input[type='text']::placeholder{
+
+input[type='text']::placeholder {
     color: yellow;
     font-size: 24px;
 }
-input[type='email']::placeholder{
+
+input[type='email']::placeholder {
     color: red;
     font-size: 24px;
 }
-input:focus{
+
+input:focus {
     outline: red 1px solid;
     border: 1px solid transparent !important;
 }
-input[type='submit']{
+
+input[type='submit'] {
     padding: 20px 30px;
     background-color: bisque;
     color: #000;
@@ -89,22 +99,25 @@ input[type='submit']{
     margin: 0 auto;
     cursor: pointer;
 }
-input[type='submit']:hover{
+
+input[type='submit']:hover {
     background-color: #000;
     color: #fff;
 }
 
-.parent{
+.parent {
     width: 100em;
     height: 100vh;
     border: 1px solid;
     font-size: 10px;
 }
-.child{
+
+.child {
     width: 50%;
     height: 50rem;
     background-color: red;
 }
-.child p{
+
+.child p {
     font-size: 5em;
 }
