@@ -22,6 +22,10 @@ a {
   --black-color: #252525;
 }
 
+.bg-white {
+  background-color: var(--white-color);
+}
+
 #container {
   width: 1200px;
   margin: 0 auto;
@@ -86,6 +90,15 @@ a {
   color: var(--white-color);
 }
 
+/* Top nav  */
+.top-nav {
+  width: 100%;
+  padding: 10px 0;
+  background-color: #727272;
+  position: relative;
+  top: 0;
+}
+
 /* Navbar Start */
 
 nav {
@@ -139,7 +152,7 @@ i {
 
 .nav_icon li span {
   position: absolute;
-  top: 15px;
+  top: 0;
   width: 14px;
   height: 14px;
   background-color: var(--primary-color);
@@ -1228,6 +1241,58 @@ i {
   font-family: var(--primary-font);
 }
 
+/* About Us Page Start  */
+.about-us {
+  width: 100%;
+  height: auto;
+}
+
+.about-us img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  position: relative;
+}
+
+.about-us-breadcrumb {
+  width: 100%;
+  height: 500px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 20;
+  background-color: #0000007d;
+}
+
+.about-us-breadcrumb h1 {
+  font-size: 30px;
+  font-family: var(--secondary-font);
+  text-transform: uppercase;
+  color: var(--white-color);
+}
+
+.about-us-breadcrumb h4 {
+  font-size: 20px;
+  font-family: var(--secondary-font);
+  text-transform: uppercase;
+  color: var(--white-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (min-width:320px) and (max-width:480px) {
   #container {
     width: 100%;
@@ -1472,10 +1537,12 @@ i {
     border-radius: 10px;
   }
 
-
-
   .service .service_ineer {
     grid-template-columns: 1fr;
+  }
+
+  .about-us-breadcrumb {
+    top: 11%;
   }
 
   .footer {
