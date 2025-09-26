@@ -1757,7 +1757,15 @@ textarea ::placeholder {
     color: #727272;
     font-family: var(--primary-font);
     padding-bottom: 15px;
-
+}
+.contact-btn button a{
+  padding: 12px 30px;
+    display: block;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    outline: none;
+    font-size: 16px;
+    font-family: var(--primary-font);
 }
 @media screen and (min-width: 320px) and (max-width: 480px) {
   #container {
