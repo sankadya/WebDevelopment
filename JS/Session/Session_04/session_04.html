@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Session 04</title>
+</head>
+<style>
+        #img-box{
+            width: 400px;
+            height: 400px;
+            background-color: red;
+        }
+    </style>
+<body>
+    
+    <h1 id="head1">Hello</h1>
+    <button onclick="fun1()">click Me</button>
+    <script>
+        // Dom CSS 
+
+        function fun1(){
+            // var a = document.getElementById('head1');
+           a.style.backgroundColor = 'red';
+           a.style.color = 'yellow';
+           a.style.fontSize ='40px';
+
+        }
+    </script>
+    <div id="img-box">
+    </div>
+    <button onclick="openim()">Open Img</button>
+    <script>
+        function openim(){
+        // var openim = document.getElementById('img-box');
+        var openim = document.getElementById('openim');
+        // openim.style.backgroundImage = "url(https://images.pexels.com/photos/30253590/pexels-photo-30253590.jpeg)";
+        // openimg.innerHTML = 'My Name is <b>SVP</b>'
+        // openim.style.backgroundRepeat = 'no-repeat';s
+        // openim.style.backgroundPosition = 'center';
+        // openim.style.backgroundSize = 'cover';
+// Dom inline CSS 
+        // openim.style = 'background-image: url(https://images.pexels.com/photos/34111808/pexels-photo-34111808.jpeg);background-position: center;background-size: cover;background-repeat: no-repeat;';
+        }
+// openim.innerHTML = '<img src="https://images.pexels.com/photos/34111808/pexels-photo-34111808.jpeg" alt="">';
+// openim.innerHTML = 'My Name is <b>SVP</b>';
+// openim.innerHTML = '<h1>Hello</h1>';        
+    </script>
+    <script>
+        // string indexing & methods
+// i insencetive 
+// g Global 
+var a = '   Hello      '.trim();
+console.log(a[3]);
+console.log(a.length);
+console.log(a.toUpperCase());
+console.log(a.toLowerCase());
+console.log(a.length);
+
+// var b = 'AAAhalloaaa'.trim();
+var b = 'Hello dev'.trim();
+
+var c = b.replace(/Hello/ig,'Hi');
+console.log(c)
+    </script>
+</body>
+</html>
