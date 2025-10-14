@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 5</title>
+</head>
+
+<body>
+
+  <input type="text" id="inp1">
+  <input type="text" id="inp2">
+  <p id="ans"></p>
+  <button onclick="highest_num()">Highest num</button>
+
+  <script>
+    // 1.Arithmetic operators
+    // + - * / %   ** => exponent
+    // var a = 10;
+    // var b = 5;
+    // console.log(a+b)
+    // console.log(a-b)
+    // console.log(a*b)
+    // console.log(a/b)
+    // console.log(a%b)
+    // console.log(a**b)
+
+    // 2.Assignment operators
+    // =   +=  -=  *= /=
+    // var a = 10;
+    // a += 2;  // same as a = a + 2;
+    // a -= 2;  // same as a = a - 2;
+    // a *= 2;  // same as a = a * 2;
+    // a /= 2;  // same as a = a / 2;
+    // console.log(a)
+
+    // 3.unary operators
+    // ++  , --
+    // var a = 10;
+    // a++    // a = a + 1   (post increment)
+    // ++a    // a = a + 1   (pre increment)
+    // a--    // a = a - 1   (post decrement)
+    // --a    // a = a - 1   (pre decrement)
+    // console.log(a)
+    // var m = 5;
+    // var n = m++;    
+    // console.log(m);  // 6  
+    // console.log(n);  // 5     
+
+    // 4.Comparison operators
+    // ==   ===   !=  !==  >  >=   <   <=
+
+    // var a = 10;
+    // var b = 10;
+    // console.log(a == b)
+    // console.log(a === b)
+    // console.log(a != b)
+    // console.log(a !== b)
+    // console.log(a > b) 
+    // console.log(a >= b)
+    // console.log(a < b)
+    // console.log(a <= b)
+
+    // console.log(3>2>1);  // f
+    // console.log(1<2<3); // t 
+
+    // 5 . Logical operators
+    // &&   ||   not()
+
+    // Condtion 1   &&  Condition 2   = output
+    // T                       T               T
+
+    // Condtion 1   ||  Condition 2   = output
+    // F                       F              F
+
+    // !()
+    // F =>  T
+    // T =>  F
+
+    // var a = 10;
+    // var b = 5;
+    // console.log(a>5 && b>3);
+    // console.log(a<5 || b<3);
+    // console.log(!(a<5 || b<3));
+    // console.log(10>5 || a>b && b<3);
+    // console.log((10>5 || a>b) && b<3);
+    // console.log(true && true);
+    // console.log(true == 'true');
+
+    // Conditional Statements
+    // 1. if else 
+    // 2. switch case
+
+    // var age =Number(prompt('age: ')); 
+
+    // if (age >= 18){
+    //     console.log('You can vote')
+    // }else{
+    //     console.log("You can't vote")
+    // }
+
+    // var num1 = Number(prompt('num1: '));
+
+    // if(num1>=30){
+    //     console.log('num is greater than 30')
+    // }else if(num1>=20){
+    //     console.log('num is greater than 20')
+    // }else if(num1>=10){
+    //     console.log('num is greater than 10')
+    // }else{
+    //     console.log('num is less than 10');
+    // }
+
+    // var num1 = Number(prompt('num1: '));
+
+    // if(num1>=20 && num1<=30){
+    //     console.log('num is in between 20 - 30')
+    // }else{
+    //     console.log('num is not in between 20 - 30')
+    // }
+
+    // var num1 = Number(prompt('num1: '));
+
+    // if (num1 % 2 == 0){
+    //     console.log(num1+" is even")
+    // }else{
+    //     console.log(num1+" is odd")
+    // }
+
+    // var num1 = Number(prompt('num1: '));
+    // var num2 = Number(prompt('num1: '));
+
+    // if (num1>num2){
+    //     console.log(num1 + ' is greater')
+    // }else{
+    //     console.log(num2 + ' is greater')
+    // }
+
+    function highest_num() {
+      var inp1 = Number(document.getElementById('inp1').value);
+      var inp2 = Number(document.getElementById('inp2').value);
+      var ans = document.getElementById('ans');
+
+      if (inp1 > inp2) {
+        ans.innerHTML = inp1 + ' is greater'
+      } else {
+        ans.innerHTML = inp2 + ' is greater'
+      }
+    }
+  </script>
+
+
+</body>
+
+</html>
