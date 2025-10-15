@@ -151,26 +151,32 @@
                 ipsam, quasi beatae, molestiae, fuga possimus dolorum.</p>
         <h1 id="texthide"></h1>
         <button onclick="boldtext()">Bold Text</button> -->
-        <input type="number" name="" id="num1">
+
+        <!-- <input type="number" name="" id="num1">
         <input type="number" name="" id="num2">
         <p id="ans"></p>
-        <button onclick="actlot">Click Me</button>
+        <button onclick="actlot()">Click Me</button> -->
 
 
-        <script>
+        <!-- <script>
                 // function calper() {
                 //         var a = document.getElementById("valstore").value;
                 //         alert(a);
                 // }
                 function actlot() {
-                        var a = document.getElementById("num1").value;
-                        var b = document.getElementById("num2").value;
+                        var a = Number(document.getElementById("num1").value);
+                        var b = Number(document.getElementById("num2").value);
+                        var c = document.getElementById("ans");
 
-                        console.log(a + b);
+                        var copans = a + b;
+
+                        c.innerHTML = "Ans = " + copans;
+                        // console.write(copans);
                 }
-        </script>
+        </script> -->
         <!-- <input type="text" id="valstore">
         <button onclick="calper()">Submit</button> -->
+
 
 
 </body>

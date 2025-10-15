@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IF ELSE</title>
+</head>
+
+<body>
+    <input type="number" id="number1">
+    <input type="number" id="number2">
+    <h1 id="fans"></h1>
+    <button onclick="calculator()">ADD</button>
+    <button onclick="Subtract()">Subtract</button>
+    <button onclick="divide()">Divide</button>
+    <button onclick="multiplay()">Multiplay</button>
+    <script>
+        function calculator() {
+            var x = Number(document.getElementById("number1").value);
+            var y = Number(document.getElementById("number2").value);
+            var z = document.getElementById("fans");
+
+            var qans = x + y;
+            z.innerHTML = "Addition is " + qans;
+        }
+        function Subtract() {
+            var x = Number(document.getElementById("number1").value);
+            var y = Number(document.getElementById("number2").value);
+            var z = document.getElementById("fans");
+
+            var qans = x - y;
+            z.innerHTML = "Subtraction is " + qans;
+        }
+        function divide() {
+            var x = Number(document.getElementById("number1").value);
+            var y = Number(document.getElementById("number2").value);
+            var z = document.getElementById("fans");
+
+            var qans = x / y;
+            z.innerHTML = "Divide Value is" + qans;
+        }
+        function multiplay() {
+            var x = Number(document.getElementById("number1").value);
+            var y = Number(document.getElementById("number2").value);
+            var z = document.getElementById("fans");
+
+            var qans = x * y;
+            z.innerHTML = "Multipal Value is " + qans;
+        }
+
+    </script>
+
+</body>
+
+</html>
