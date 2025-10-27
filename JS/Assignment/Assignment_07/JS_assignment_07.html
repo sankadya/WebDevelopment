@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment 07</title>
+</head>
+
+<style>
+  button {
+    width: 100%;
+    padding: 20px 10px;
+    text-align: left;
+  }
+
+  .faqans {
+    display: none;
+  }
+</style>
+
+<body>
+
+  <div>
+    <button onclick="faq(this,'faq1')">What is the duration of the course?</button>
+    <p class="faqans" id="faq1">The MERN Stack training course has a total duration of approximately 6 months.
+      Throughout the
+      course, you will receive hands-on practical training in each technology, with a focus on completing real-world
+      projects. Following your training, we will prepare you for job interviews and facilitate job placement.</p>
+  </div>
+  <div>
+    <button onclick="faq(this,'faq2')">What is the duration of the course?</button>
+    <p class="faqans" id="faq2">The MERN Stack training course has a total duration of approximately 6 months.
+      Throughout the
+      course, you will receive hands-on practical training in each technology, with a focus on completing real-world
+      projects. Following your training, we will prepare you for job interviews and facilitate job placement.</p>
+  </div>
+  <div>
+    <button onclick="faq(this,'faq3')">What is the duration of the course?</button>
+    <p class="faqans" id="faq3">The MERN Stack training course has a total duration of approximately 6 months.
+      Throughout the
+      course, you will receive hands-on practical training in each technology, with a focus on completing real-world
+      projects. Following your training, we will prepare you for job interviews and facilitate job placement.</p>
+  </div>
+
+
+  <script>
+    function faq(y, z) {
+      // console.log(m)
+      var d1 = document.getElementsByClassName('faqans');
+      var btn = document.getElementsByTagName('button');
+      for (var i = 0; i < btn.length; i++) {
+        btn[i].style.color = 'red';
+        btn[i].style.backgroundColor = 'whitesmoke';
+      }
+      for (var i = 0; i < d1.length; i++) {
+        d1[i].style.display = 'none'
+      }
+      document.getElementById(z).style.display = 'block';
+      y.style.color = 'red';
+      z.style.backgroundColor = 'black';
+      z.style.height = '50px';
+    }
+  </script>
+
+</body>
+
+</html>

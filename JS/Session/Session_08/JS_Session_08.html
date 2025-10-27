@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    
+    , initial-scale=1.0">
+    <title>Session 08</title>
+</head>
+<style>
+    .img1{
+        width: 300px;
+    }
+    .img2{
+        width: 500px;
+        border-radius: 50%;
+    }
+</style>
+<body>
+    <script>
+        var arr1 = [[10,20],[20,30],[50,60,70]];
+
+        // for (var i in arr1){
+        //     console.log(arr1[i]);
+        //     for(var j in arr1[i]){
+        //         console.log(arr1[i][j])
+        //     }
+        // }
+
+        // for (var i of arr1){
+        //     for (var j of i){
+        //         console.log(j)
+        //     }
+        // }
+
+        // for(var i = 0;i<arr1.length;i++){
+        //     for(var j = 0;j<arr1[i].length;j++){
+        //         console.log(arr1[i][j])
+        //     }
+        // }
+    </script>
+    <script>
+        // var obj1 ={
+        //     'data':{
+        //         "name":"Sanket",
+        //         'age':33,
+        //         "email":"sanket@gmail.com"
+        //     }
+        // }
+
+        // for(var i in obj1){
+        //     console.log(obj1[i])
+        //     for (var j in obj1[i]){
+        //         console.log(j+" = "+obj1[i][j])
+        //     }
+        // }
+    </script>
+    <script>
+        // var a = [20,67,79,8,90];
+        // for(var i of a){
+        //     if(i%2 == 0){
+        //         console.log(i)
+        //     }
+        // } 
+    </script>
+    <script>
+        // var a = [20,10.44,67,33,8,5];
+        // var a = [-4,,-7,-1,-9];
+
+        // var highest_num = a[0];
+        // var lowest_num = a[0];
+
+        // for(var ele of a){
+        //   if(ele > highest_num){
+        //     highest_num = ele
+        //   }
+        //   if(ele < lowest_num){
+        //     lowest_num = ele
+        //   }
+        // }
+        // console.log(highest_num)
+        // console.log(lowest_num)
+    </script>
+    <script>
+//         var b = [20,12,33,50,67,79,35]
+// var sum = 0
+//         for(var i of b){
+//             if(i%2 != 0){
+//                 // console.log(i)
+//                 sum += i 
+//             }
+//         }
+//         console.log(sum)
+    </script>
+
+    <img src="https://images.pexels.com/photos/34189902/pexels-photo-34189902.jpeg"
+    alt="This is img" title="Image 1" class="img1" id="img">
+    <button onclick="fun1()">Click Me</button>
+
+    <script>
+        function fun1(){
+            var img = document.getElementById('img');
+            // alert(img.getAttribute('src'))
+            // img.setAttribute('class','img2');
+
+            alert(img.className)
+            img.className = 'img2';
+            if (img.getAttribute('class') == 'img'){
+                img.setAttribute('class','img2');
+            }else{
+                img.setAttribute('class','img1');
+            }
+
+            // if(img.className == 'img1'){
+            //     img.className == 'img2'
+            // }else{
+            //     img.className = 'img1'
+            // }
+        }
+
+    </script>
+
+    <h3 class="abc">Heading 1</h3>
+    <h3 class="abc">Heading 2</h3>
+    <h3 class="abc">Heading 3</h3>
+    <button onclick="fun2()">Click Me</button>
+    <script>
+        function fun2(){
+         var abc = document.getElementsByClassName('abc');
+        //   var abc = document.getElementByIdTagName('h3');
+        // console.log(abc[0].innerHTML);
+        // abc[0].style.backgroundColor = 'red'
+        // abc[1].style.backgroundColor = 'red'
+        // abc[2].style.backgroundColor = 'red'
+        
+        for(var i = 0;i<abc.length;i++){
+            console.log(abc[i].innerHTML)
+            abc[i].style.backgroundColor = 'red'
+        }
+
+        }
+    </script>
+    
+</body>
+</html>
