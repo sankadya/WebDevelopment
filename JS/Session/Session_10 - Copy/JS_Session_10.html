@@ -16,7 +16,7 @@
     left: 0;
     display: flex;
     flex-direction: column;
-    transform: scale(0.7);
+    transform: translateY(-100%);
     z-index: -1;
     opacity: 0;
     justify-content: center;
@@ -44,7 +44,7 @@
       3</button>
   </div>
 
-  <div id="modal" onclick="close_modal()">
+  <div id="modal">
     <img src="" id="img1">
     <input type="text" id="txt1">
     <button onclick="close_modal()">Close</button>
@@ -56,7 +56,7 @@
     var img1 = document.getElementById('img1');
 
     function open_modal(a, b, c) {
-      modal.style.transform = 'scale(1)';
+      modal.style.transform = 'translate(0%)';
       modal.style.zIndex = '1';
       modal.style.opacity = '1'
       modal.style.visibility = 'visible';
@@ -66,9 +66,9 @@
 
     function close_modal() {
       modal.style.visibility = 'hidden';
-      modal.style.transform = 'scale(0.7)';
-      modal.style.zIndex = '-1';
-      modal.style.opacity = '0';
+      modal.style.transform = 'translateY(100%)';
+      // modal.style.zIndex = '-1';
+      // modal.style.opacity = '0';
     }
   </script>
 
